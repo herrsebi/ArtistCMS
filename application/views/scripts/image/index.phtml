@@ -1,0 +1,29 @@
+<?php $this->headScript()->appendFile('js/dragDrop.js');?>
+
+<div class="grid_8 alpha">
+<p id="imageDropBoxStatus">Drop image files here and press the button to upload them.
+<br/>
+(Click an image to remove it)
+</p>
+
+<div id="imageDropBox">
+<div id="loaderBack">
+</div>
+</div>
+</div>
+<div class="grid_4 omega">
+<div id="statusBox">
+<h1>Upload Info:</h1>
+<ul>
+<li><p>Number of Files: <span id="fileNum">0</span></p></li>
+<li><p>Total File Size: <span id="fileSize">0</span></p></li>
+</ul>
+<h2>Upload progress:</h2>
+<div class="progressBar" id="pb1"><div class="progressBarInner"></div> </div>
+<h2>File progress:</h2>
+<div class="progressBar" id="pb2"><div class="progressBarInner"></div> </div>
+<div id="uploadButton">
+Upload!
+</div>
+</div>
+</div>

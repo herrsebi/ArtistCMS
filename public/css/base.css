@@ -1,0 +1,202 @@
+body{
+	font-family : 'Helvetica';
+	background-color : #8e99a0;
+	background-image : url('/images/bg-gradient_01.png');
+	background-repeat: no-repeat;
+	background-position : 0% 0%;
+}
+
+h1{
+	color: #444444;
+	font-style: italic;
+	text-shadow: 2px 2px 4px #666;
+}
+
+#logo{
+	background-image	: url('/images/Logo_02.png');
+	background-repeat	: no-repeat;
+	min-height			: 90px;
+}
+
+.navMenuItem{
+	font-size	: 1.75em;
+	font-style	: light;
+	color		: #eae3c3;
+	min-height  : 90px;
+	min-width 	: 95px;
+	float		: left;
+	background-repeat : no-repeat;
+}
+
+#navMenuHome{
+	background-image : url('/images/MenuItems_Home.png');
+}
+
+#navMenuImage{
+	background-image : url('/images/MenuItems_Image.png');
+}
+
+#navMenuUpload{
+	background-image : url('/images/MenuItems_Upload.png');
+}
+
+#line {
+	background-image : url('/images/Line.png');
+	min-height 		 : 3px;
+}
+
+#loaderBack {
+	top : 100%;
+	min-height : 24px;
+	min-width  : 24px;
+	background-image : url('/images/loader.gif');
+	background-repeat : no-repeat;
+	display : none;
+	float : right;
+}
+#recentImages {
+	color 			: #6d747a;
+}
+
+#recentImages h2{
+	font-stretch 	: wider;
+	font-weight 	: 600;
+}
+
+	
+#imageDropBox {
+	background-color : 	#959b92;
+	min-height 		 : 150px;
+	margin-top		 : 10px;
+	top:0;
+	padding-top: 10px;
+	z-index:1;
+}
+
+#imageDropBoxStatus {
+	text-align:center;
+	font-size:small;
+	color:white;
+	position:absolute;
+	top:50px;
+	left:170px;
+	z-index:0;
+}
+
+#recentImages img,
+#imageDropBox img{
+	height			: 80px;
+	border			: 3px solid #959b92;
+}
+
+#imageDropBox .imgDiv {
+	display : none;
+}
+
+#recentImages .imgContainer,
+#imageDropBox .imgContainer {
+	background-image: url('/images/BoxBg_Middle.png');
+	text-align 		: center; 
+	padding			: 5px;
+	font-weight		: 100;
+	font-size		: 0.8em;
+}
+
+#recentImages .imgHeader,
+#imageDropBox .imgHeader {
+	background-image: url('/images/BoxBg_Top.png');
+	background-repeat : no-repeat;
+	min-height		: 10px;
+}
+
+#recentImages .imgFooter,
+#imageDropBox .imgFooter {
+	background-image: url('/images/BoxBg_Bottom.png');
+	background-repeat : no-repeat;
+	min-height		: 10px;
+	margin-bottom 	: 10px;
+}
+
+#statusBox {
+	background-color 	: #6d747a;
+	min-height 			: 300px;
+	padding				: 10px;
+}
+
+#statusBox .errorDiv {
+	display 			: none;
+	word-wrap 			: break-word;
+	background-color	: #fdd9d0;
+	border				: 1px solid red;
+	clear				: both;
+	font-size			: small;
+	padding-left		: 10px;
+	padding-right		: 10px;
+}
+
+#statusBox .errorDiv h3{
+	font-size	: 15px;
+	text-align	: center;
+	color		: #f34c3e;
+}
+
+#statusBox h1 {
+	color		: #fffcd1;
+	font-style	: normal;
+	font-size	: 15px;
+	text-align	: center;
+}
+
+#statusBox h2 {
+	margin-top	: 5px;
+	clear		: both;
+	font-size	: 13px;
+}
+
+#statusBox ul{
+	padding		: 0;
+	list-style	: none;
+	font-size	: small;
+}
+
+.progressBar {
+	width : 220px;
+	height : 20 px; 
+	border-radius : 2px;
+	float : left;
+	overflow : hidden;
+	margin-left : 10px;
+	margin-bottom: 10px;
+}
+
+.progressBarInner {
+	height : 20px;
+	width : 20px;
+	background: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(0.19, rgb(148,150,125)),
+	    color-stop(0.6, rgb(178,180,163)),
+	    color-stop(0.8, rgb(214,216,196))
+	);
+	background: -moz-linear-gradient(
+	    center bottom,
+	    rgb(148,150,125) 19%,
+	    rgb(178,180,163) 60%,
+	    rgb(214,216,196) 80%
+	);
+}
+
+#uploadButton {
+	padding:10px;
+	clear:both;
+	height:20px;
+	visibility:hidden;
+	margin:20px;
+	border:1px solid black;
+	background-color:#fffcd1;
+	text-align:center;
+	font-size:large;
+	color:black;
+}

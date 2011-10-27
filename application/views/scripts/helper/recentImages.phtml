@@ -1,0 +1,11 @@
+<?php foreach($this->recentImages as $image):?>
+        <div class="grid_2">
+         <div class="imgHeader"></div>
+         <div class="imgContainer">
+          <a href="#" onClick="deleteImage(<?php echo $image->id;?>);"><img src="<?php echo $this->baseUrl() . '/images/raw/' . $image->filename;?>"></a>
+          <p><?php echo (strlen($image->filename) > 15)?substr($image->filename,0,12) . '...' : $image->filename;?>
+          <br><?php echo $image->added;?>
+         </div>
+         <div class="imgFooter"></div>
+        </div>
+<?php endforeach;?>

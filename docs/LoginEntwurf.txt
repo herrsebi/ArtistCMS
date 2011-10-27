@@ -1,0 +1,3 @@
+Für den Login Prozess siehe http://weierophinney.net/matthew/archives/165-Login-and-Authentication-with-Zend-Framework.html.
+Am besten auch noch ein Plugin in den PreDispatch Strang der Plugins -> http://framework.zend.com/manual/de/zend.controller.plugins.html
+Forms in library ? AutoLoading Checken!

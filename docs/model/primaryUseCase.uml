@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_i6d9MDG3Ed-N6aekqhuf6w" name="primaryUseCase">
+  <elementImport xmi:id="_i8jn4DG3Ed-N6aekqhuf6w">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_i8jn4TG3Ed-N6aekqhuf6w">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_i8jn4jG3Ed-N6aekqhuf6w">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_i8jn4zG3Ed-N6aekqhuf6w">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_kt0KIDG3Ed-N6aekqhuf6w" name="User">
+    <generalization xmi:id="_tI-YkDG3Ed-N6aekqhuf6w" general="_tHyFwDG3Ed-N6aekqhuf6w"/>
+    <generalization xmi:id="_NaDTQDG4Ed-N6aekqhuf6w" general="_G936ADG4Ed-N6aekqhuf6w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_narZADG3Ed-N6aekqhuf6w" name="cmsBackend">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_tHyFwDG3Ed-N6aekqhuf6w" name="Lädt Bilder hoch"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_G936ADG4Ed-N6aekqhuf6w" name="Legt News an und editiert News"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_hTvocDHiEd-oD-7ul0zFMA" name="Hol XML Für Bilder/News"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_-CijMDJmEd-yWtbfM6NbWQ" name="Konvertiere Bilder"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Moya4DJnEd-yWtbfM6NbWQ" name="ImageController">
+      <ownedOperation xmi:id="_VYLiMDKOEd-yWtbfM6NbWQ" name="uploadImages">
+        <ownedParameter xmi:id="_W4JgIDKOEd-yWtbfM6NbWQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_Y99WEDKOEd-yWtbfM6NbWQ" name="deleteImage">
+        <ownedParameter xmi:id="_aSTS0DKOEd-yWtbfM6NbWQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_ayywwDKOEd-yWtbfM6NbWQ" name="createGallery">
+        <ownedParameter xmi:id="_b5t8kDKOEd-yWtbfM6NbWQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_dANDgDKOEd-yWtbfM6NbWQ" name="setGalleryImages">
+        <ownedParameter xmi:id="_kNQgEDKOEd-yWtbfM6NbWQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_koEz0DKOEd-yWtbfM6NbWQ" name="deleteGallery">
+        <ownedParameter xmi:id="_lw8gYDKOEd-yWtbfM6NbWQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_mJrwgDKOEd-yWtbfM6NbWQ" name="editGallery">
+        <ownedParameter xmi:id="_nQ6eUDKOEd-yWtbfM6NbWQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nloKEDKOEd-yWtbfM6NbWQ" name="editImage">
+        <ownedParameter xmi:id="_oh-dkDKOEd-yWtbfM6NbWQ" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_QNPZEDJnEd-yWtbfM6NbWQ" name="NewsController">
+      <ownedOperation xmi:id="_Gvb6sDKPEd-yWtbfM6NbWQ" name="createNews">
+        <ownedParameter xmi:id="_HkfTYDKPEd-yWtbfM6NbWQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_IHWv4DKPEd-yWtbfM6NbWQ" name="deleteNews">
+        <ownedParameter xmi:id="_JXrIQDKPEd-yWtbfM6NbWQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_J2qxYDKPEd-yWtbfM6NbWQ" name="createCategory">
+        <ownedParameter xmi:id="_LQOlUDKPEd-yWtbfM6NbWQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_LkV0IDKPEd-yWtbfM6NbWQ" name="deleteCategory">
+        <ownedParameter xmi:id="_M2v3MDKPEd-yWtbfM6NbWQ" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_UwI8gDJnEd-yWtbfM6NbWQ" name="Gallery" clientDependency="_lfk40DJoEd-yWtbfM6NbWQ">
+      <generalization xmi:id="_U-nn8DJoEd-yWtbfM6NbWQ" general="_QvHhoDJoEd-yWtbfM6NbWQ"/>
+      <ownedAttribute xmi:id="_XHKXEDKPEd-yWtbfM6NbWQ" name="name" aggregation="composite"/>
+      <ownedAttribute xmi:id="_YLjzUDKPEd-yWtbfM6NbWQ" name="note" aggregation="composite"/>
+      <interfaceRealization xmi:id="_lfk40DJoEd-yWtbfM6NbWQ" supplier="_jFf4gDJnEd-yWtbfM6NbWQ" client="_UwI8gDJnEd-yWtbfM6NbWQ" contract="_jFf4gDJnEd-yWtbfM6NbWQ"/>
+      <ownedOperation xmi:id="_ZN3k4DKPEd-yWtbfM6NbWQ" name="getImages">
+        <ownedParameter xmi:id="_bHA30DKPEd-yWtbfM6NbWQ" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Wd-XUDJnEd-yWtbfM6NbWQ" name="Image">
+      <generalization xmi:id="_XezswDJoEd-yWtbfM6NbWQ" general="_QvHhoDJoEd-yWtbfM6NbWQ"/>
+      <ownedAttribute xmi:id="_O2m2IDKPEd-yWtbfM6NbWQ" name="name" aggregation="composite"/>
+      <ownedAttribute xmi:id="_Qxi40DKPEd-yWtbfM6NbWQ" name="url" aggregation="composite"/>
+      <ownedAttribute xmi:id="_VSCBcDKPEd-yWtbfM6NbWQ" name="note" aggregation="composite"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_bck_UDJnEd-yWtbfM6NbWQ" name="Category" clientDependency="_jhNusDJoEd-yWtbfM6NbWQ">
+      <generalization xmi:id="_YakKYDJoEd-yWtbfM6NbWQ" general="_QvHhoDJoEd-yWtbfM6NbWQ"/>
+      <ownedAttribute xmi:id="_l5jNUDKPEd-yWtbfM6NbWQ" name="name" aggregation="composite"/>
+      <ownedAttribute xmi:id="_mlqFYDKPEd-yWtbfM6NbWQ" name="note" aggregation="composite"/>
+      <interfaceRealization xmi:id="_jhNusDJoEd-yWtbfM6NbWQ" supplier="_jFf4gDJnEd-yWtbfM6NbWQ" client="_bck_UDJnEd-yWtbfM6NbWQ" contract="_jFf4gDJnEd-yWtbfM6NbWQ"/>
+      <ownedOperation xmi:id="_nUmPADKPEd-yWtbfM6NbWQ" name="getNews">
+        <ownedParameter xmi:id="_n6S9EDKPEd-yWtbfM6NbWQ" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_d9grADJnEd-yWtbfM6NbWQ" name="News">
+      <generalization xmi:id="_ZkLd0DJoEd-yWtbfM6NbWQ" general="_QvHhoDJoEd-yWtbfM6NbWQ"/>
+      <ownedAttribute xmi:id="_oyLnUDKPEd-yWtbfM6NbWQ" name="name" aggregation="composite"/>
+      <ownedAttribute xmi:id="_qORK0DKPEd-yWtbfM6NbWQ" name="content" aggregation="composite"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_jFf4gDJnEd-yWtbfM6NbWQ" name="XMLRenderer"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_pKuxYDJnEd-yWtbfM6NbWQ" name="XMLController" clientDependency="_wulH4DJoEd-yWtbfM6NbWQ"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_QvHhoDJoEd-yWtbfM6NbWQ" name="DBEntity">
+      <ownedOperation xmi:id="_gm_HgDKPEd-yWtbfM6NbWQ" name="save">
+        <ownedParameter xmi:id="_hKAVADKPEd-yWtbfM6NbWQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_hk-ZwDKPEd-yWtbfM6NbWQ" name="load">
+        <ownedParameter xmi:id="_ihVUUDKPEd-yWtbfM6NbWQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_i1mUIDKPEd-yWtbfM6NbWQ" name="getByFid">
+        <ownedParameter xmi:id="_kMBUgDKPEd-yWtbfM6NbWQ" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_wulH4DJoEd-yWtbfM6NbWQ" supplier="_jFf4gDJnEd-yWtbfM6NbWQ" client="_pKuxYDJnEd-yWtbfM6NbWQ"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_dozUYDJpEd-yWtbfM6NbWQ" memberEnd="_dozUYTJpEd-yWtbfM6NbWQ _dozUZDJpEd-yWtbfM6NbWQ">
+      <ownedEnd xmi:id="_dozUYTJpEd-yWtbfM6NbWQ" name="src" type="_d9grADJnEd-yWtbfM6NbWQ" association="_dozUYDJpEd-yWtbfM6NbWQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dozUYzJpEd-yWtbfM6NbWQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dozUYjJpEd-yWtbfM6NbWQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_dozUZDJpEd-yWtbfM6NbWQ" name="dst" type="_QNPZEDJnEd-yWtbfM6NbWQ" association="_dozUYDJpEd-yWtbfM6NbWQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dozUZjJpEd-yWtbfM6NbWQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dozUZTJpEd-yWtbfM6NbWQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_efymwDJpEd-yWtbfM6NbWQ" memberEnd="_efymwTJpEd-yWtbfM6NbWQ _efymxDJpEd-yWtbfM6NbWQ">
+      <ownedEnd xmi:id="_efymwTJpEd-yWtbfM6NbWQ" name="src" type="_bck_UDJnEd-yWtbfM6NbWQ" association="_efymwDJpEd-yWtbfM6NbWQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_efymwzJpEd-yWtbfM6NbWQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_efymwjJpEd-yWtbfM6NbWQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_efymxDJpEd-yWtbfM6NbWQ" name="dst" type="_QNPZEDJnEd-yWtbfM6NbWQ" association="_efymwDJpEd-yWtbfM6NbWQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_efymxjJpEd-yWtbfM6NbWQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_efymxTJpEd-yWtbfM6NbWQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_g4Y10DJpEd-yWtbfM6NbWQ" memberEnd="_g4Y10TJpEd-yWtbfM6NbWQ _g4Y11DJpEd-yWtbfM6NbWQ">
+      <ownedEnd xmi:id="_g4Y10TJpEd-yWtbfM6NbWQ" name="src" type="_Moya4DJnEd-yWtbfM6NbWQ" association="_g4Y10DJpEd-yWtbfM6NbWQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_g4Y10zJpEd-yWtbfM6NbWQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_g4Y10jJpEd-yWtbfM6NbWQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_g4Y11DJpEd-yWtbfM6NbWQ" name="dst" type="_UwI8gDJnEd-yWtbfM6NbWQ" association="_g4Y10DJpEd-yWtbfM6NbWQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_g4Y11jJpEd-yWtbfM6NbWQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_g4Y11TJpEd-yWtbfM6NbWQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ht4TYDJpEd-yWtbfM6NbWQ" memberEnd="_ht4TYTJpEd-yWtbfM6NbWQ _ht4TZDJpEd-yWtbfM6NbWQ">
+      <ownedEnd xmi:id="_ht4TYTJpEd-yWtbfM6NbWQ" name="src" type="_Moya4DJnEd-yWtbfM6NbWQ" association="_ht4TYDJpEd-yWtbfM6NbWQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ht4TYzJpEd-yWtbfM6NbWQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ht4TYjJpEd-yWtbfM6NbWQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_ht4TZDJpEd-yWtbfM6NbWQ" name="dst" type="_Wd-XUDJnEd-yWtbfM6NbWQ" association="_ht4TYDJpEd-yWtbfM6NbWQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ht4TZjJpEd-yWtbfM6NbWQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ht4TZTJpEd-yWtbfM6NbWQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_1eYfEDKNEd-yWtbfM6NbWQ" name="ImageConverter">
+      <ownedOperation xmi:id="_7dwyIDKOEd-yWtbfM6NbWQ" name="createThumbnails" isStatic="true">
+        <ownedParameter xmi:id="_9NXukDKOEd-yWtbfM6NbWQ" direction="return"/>
+        <ownedParameter xmi:id="_9NXukTKOEd-yWtbfM6NbWQ" name="Image"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="__-JCgDKNEd-yWtbfM6NbWQ" name="User"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Ez8T0DKOEd-yWtbfM6NbWQ" name="Role"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_IzM-sDKOEd-yWtbfM6NbWQ" memberEnd="_IzM-sTKOEd-yWtbfM6NbWQ _IzM-tDKOEd-yWtbfM6NbWQ">
+      <ownedEnd xmi:id="_IzM-sTKOEd-yWtbfM6NbWQ" name="src" type="_1eYfEDKNEd-yWtbfM6NbWQ" association="_IzM-sDKOEd-yWtbfM6NbWQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IzM-szKOEd-yWtbfM6NbWQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IzM-sjKOEd-yWtbfM6NbWQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_IzM-tDKOEd-yWtbfM6NbWQ" name="dst" type="_Wd-XUDJnEd-yWtbfM6NbWQ" association="_IzM-sDKOEd-yWtbfM6NbWQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IzM-tjKOEd-yWtbfM6NbWQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IzM-tTKOEd-yWtbfM6NbWQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_vhuogDKPEd-yWtbfM6NbWQ" memberEnd="_vhuogTKPEd-yWtbfM6NbWQ _vhuohDKPEd-yWtbfM6NbWQ">
+      <ownedEnd xmi:id="_vhuogTKPEd-yWtbfM6NbWQ" name="src" type="_Wd-XUDJnEd-yWtbfM6NbWQ" association="_vhuogDKPEd-yWtbfM6NbWQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vhuogzKPEd-yWtbfM6NbWQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vhuogjKPEd-yWtbfM6NbWQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_vhuohDKPEd-yWtbfM6NbWQ" name="dst" type="_UwI8gDJnEd-yWtbfM6NbWQ" aggregation="composite" association="_vhuogDKPEd-yWtbfM6NbWQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vhuohjKPEd-yWtbfM6NbWQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vhuohTKPEd-yWtbfM6NbWQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_x5tzkDKPEd-yWtbfM6NbWQ" memberEnd="_x5tzkTKPEd-yWtbfM6NbWQ _x5tzlDKPEd-yWtbfM6NbWQ">
+      <ownedEnd xmi:id="_x5tzkTKPEd-yWtbfM6NbWQ" name="src" type="_d9grADJnEd-yWtbfM6NbWQ" association="_x5tzkDKPEd-yWtbfM6NbWQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x5tzkzKPEd-yWtbfM6NbWQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x5tzkjKPEd-yWtbfM6NbWQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_x5tzlDKPEd-yWtbfM6NbWQ" name="dst" type="_bck_UDJnEd-yWtbfM6NbWQ" aggregation="composite" association="_x5tzkDKPEd-yWtbfM6NbWQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x5tzljKPEd-yWtbfM6NbWQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x5tzlTKPEd-yWtbfM6NbWQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_eFXA4DHiEd-oD-7ul0zFMA" name="Website">
+    <generalization xmi:id="_pd4_YDHiEd-oD-7ul0zFMA" general="_hTvocDHiEd-oD-7ul0zFMA"/>
+  </packagedElement>
+</uml:Package>

@@ -1,0 +1,39 @@
+<?php 
+	echo $this->doctype()."\n";
+	$this->headLink()->prependStylesheet('css/grid.css');
+	$this->headLink()->prependStylesheet('css/base.css');
+?>
+<html>
+<head>
+<base href="http://<?php echo $_SERVER['HTTP_HOST'] ."/" . Zend_Controller_Front::getInstance()->getBaseUrl();?>/" />
+	
+<?php 
+	echo $this->headLink();
+	echo $this->headStyle();
+?>
+	
+</head>
+<body>
+
+<div class="container container_12">
+	<div class="grid_6" id="logo">&nbsp;<h1 style="display:none;">Uploadr</h1></div>
+	<div class="grid_6">
+		<div class="navMenuItem" id="navMenuHome"></div>
+		<div class="navMenuItem" id="navMenuImage"></div>
+		<div class="navMenuItem" id="navMenuUpload"></div>
+	</div>
+	<div class="clear"></div>
+	<div class="grid_12 alpha omega" id="line"></div> 
+	<div id="insideContainer">
+		
+					<?php echo $this->layout()->content; ?>
+		
+	</div>
+</div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="/js/functions.js"></script>
+<?php 
+	echo $this->headScript();
+?>
+</body>
+</html>

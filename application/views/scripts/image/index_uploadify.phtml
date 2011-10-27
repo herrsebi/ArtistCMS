@@ -1,0 +1,50 @@
+<?php 
+	$this->headScript()->appendFile("js/jquery.uploadify.v2.1.4.js"); 
+ 	$this->headScript()->appendFile("js/swfobject.js"); 
+ 	$this->headScript()->captureStart();
+ 	?>
+
+$(document).ready(function() {
+	$('#fallback').uploadify({
+		'uploader': 'swf/uploadify.swf',
+		'script': 'image/upload',
+		'folder': 'images/raw/',
+		'cancelImg': 'images/cancel.png',
+		'scriptData': {'<?= Zend_Session::getOptions('name') . "':'" . Zend_Session::getId(); ?>'},
+		'onComplete':function(event, ID, fileObj, response, data) {
+						alert(response);},
+		'onError' : function(event, fileObj, errorObj){
+						alert(errorObj);
+						}
+		});
+	$('#submit').click(function() {
+		$('#fallback').uploadifyUpload();
+	});
+});
+<?php 
+	$this->headScript()->captureEnd();
+	
+	$this->headLink()->appendStylesheet("css/uploadify.css");
+?>
+	<div class="container">
+		<h1>Uploadify Test</h1> 
+ 
+		<h2>Queued Photo Uploader</h2> 
+ 
+ 		<div> 
+			<!--  <form action="<?=Zend_Controller_Front::getInstance()->getBaseUrl();?>/image/upload" method="post" enctype="multipart/form-data" id="form-demo"> --> 
+ 
+		<fieldset id="fallback"> 
+			<legend>File Upload</legend> 
+			<p> 
+				This form is just an example fallback for the unobtrusive behaviour of Uploadify.
+				If this part is not changed, something must be wrong with your code.
+			</p> 
+			<label for="demo-photoupload"> 
+				Upload a Photo:
+				<input type="file" name="Filedata" /> 
+			</label> 
+		</fieldset> 
+	 	<div id="submit">Upload Files</div>
+		</div>
+	</div>

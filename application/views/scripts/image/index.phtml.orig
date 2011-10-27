@@ -1,0 +1,15 @@
+<?php $this->headScript()->appendFile('js/dragDrop.js');?>
+
+<div class="grid_8 alpha" id="imageDropBox">
+<div id="loaderBack"></div>
+</div>
+<div class="grid_4 omega" id="statusBox">
+<ul>
+<li><b>Number of Files:</b> <span id="fileNum">0</span></p></li>
+<li><p><b>Total File Size:</b> <span id="fileSize">0</span></p></li>
+</ul>
+<h2>Upload progress</h2>
+<div class="progressBar" id="pb1"><div class="progressBarInner"></div> </div>
+<h2>File progress</h2>
+<div class="progressBar" id="pb2"><div class="progressBarInner"></div> </div>
+</div>
